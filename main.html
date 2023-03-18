@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DentalShip</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <script src="app.js" defer></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
+  </head>
+  <body>
+    <!-- <header class="header"> -->
+
+    <div class="container">
+      <nav class="navbar">
+        <!-- LOGO -->
+
+        <div class="logo">ARi</div>
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+          <!-- USING CHECKBOX HACK -->
+
+          <input type="checkbox" id="checkbox_toggle" />
+
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+          <!-- NAVIGATION MENUS -->
+
+          <div class="menu">
+            <li><a href="#home">HOME</a></li>
+
+            <li><a href="#about">ABOUT US</a></li>
+
+            <li class="services">
+              <a href="#services">SERVICES</a>
+
+              <!-- DROPDOWN MENU -->
+            </li>
+
+            <li><a href="#pricing">PRICING</a></li>
+
+            <li><a href="#contact">CONTACT US</a></li>
+          </div>
+        </ul>
+      </nav>
+
+      <!-- </header> -->
+
+      <section id="home"></section>
+      <div class="welcome">
+        <h1>Miresevini</h1>
+        <p>
+          Nepermjet ARi's travel ju jo vetem mund te udhetoni por edhe mund te
+          lidheni me dentistin tuaj te ri.
+        </p>
+        <div>
+          <a href="#about">
+            <button type="button"><span></span> WATCH MORE</button></a
+          >
+          <a href="#contact">
+            <button type="button"><span></span> Contact US</button></a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- ***********whatsApp************* -->
+    <a
+      href=" https://wa.me/+355673567186?text=I'm%20interested%20in%20your%20dental%20and%20traveling%20offerts"
+      class="float"
+      target="_blank"
+    >
+      <i class="fa fa-whatsapp my-float"></i>
+    </a>
+    <!-- ****************Section2****************** -->
+
+    <section id="about">
+      <div class="container2">
+        <div class="about-section">
+          <div class="inner-container">
+            <h1>About Us</h1>
+            <p class="text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
+              vel vero explicabo natus reprehenderit itaque mollitia earum
+              reiciendis adipisci iure libero facilis ducimus dolores dolor
+              cupiditate error, ipsa repellat odit.
+            </p>
+
+            <div class="skills">
+              <span>Web Design</span>
+              <span>Photoshop & illustration</span>
+              <span>Coding</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ****************Section3****************** -->
+    <section id="services">
+      <div class="container3">
+        <div class="service">
+          <h1 class="our-service">Our Services</h1>
+          <div class="content">
+            <div class="cards">
+              <div class="card">
+                <div class="sbox">
+                  <img
+                    src="img/flying.jpg"
+                    alt=""
+                    height="150px"
+                    width="150px"
+                  />
+                  <h3>Udhetime</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consequatur expedita dignissimos vel commodi laboriosam
+                    illum incidunt nobis et totam, voluptate suscipit cumque
+                    blanditiis quas, cupiditate neque tempora modi unde ipsam?
+                  </p>
+                </div>
+              </div>
+
+              <!-- card 2 -->
+              <div class="card">
+                <div class="sbox">
+                  <i>
+                    <img
+                      src="img/dentistsec2.jpg"
+                      alt=""
+                      height="150px"
+                      width="150px"
+                  /></i>
+                  <h3>Dentist</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consequatur expedita dignissimos vel commodi laboriosam
+                    illum incidunt nobis et totam, voluptate suscipit cumque
+                    blanditiis quas, cupiditate neque tempora modi unde ipsam?
+                  </p>
+                </div>
+              </div>
+
+              <!-- card 3 -->
+              <div class="card">
+                <div class="sbox">
+                  <i>
+                    <img
+                      src="img/ealbania2.png"
+                      alt=""
+                      height="150px"
+                      width="150px"
+                  /></i>
+                  <h3>eAlbania</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consequatur expedita dignissimos vel commodi laboriosam
+                    illum incidunt nobis et totam, voluptate suscipit cumque
+                    blanditiis quas, cupiditate neque tempora modi unde ipsam?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ***************RROBOTI******* -->
+    <section>
+      <div class="robot">
+        <div class="container4">
+          <button id="button">Tell Me A Joke</button>
+          <audio id="audio" controls hidden></audio>
+        </div>
+      </div>
+    </section>
+
+    <!-- *****************Na kontaktoni******* -->
+    <section id="contact">
+      <div class="container5">
+        <div class="contactUs">
+          <div class="title">
+            <h2>Get in Touch</h2>
+          </div>
+          <div class="box">
+            <!-- Form -->
+            <div class="contact form">
+              <h3>Send a Message</h3>
+              <form
+                id="contact-form"
+                onsubmit="sendEmail(); reset(); return false"
+              >
+                <div class="formBox">
+                  <div class="row50">
+                    <div class="inputBox">
+                      <!-- name -->
+                      <label for="name">First name</label>
+                      <input
+                        type="text"
+                        placeholder="Name"
+                        id="name"
+                        name="name"
+                        required
+                      />
+                    </div>
+                    <div class="inputBox">
+                      <!-- last name -->
+                      <label for="email">Last name</label>
+                      <input
+                        type="text"
+                        placeholder="Last name"
+                        id="email"
+                        name="email"
+                      />
+                    </div>
+                  </div>
+                  <!-- emai -->
+                  <div class="row50">
+                    <div class="inputBox">
+                      <label>Email</label>
+                      <input
+                        type="text"
+                        placeholder="Email"
+                        id="email"
+                        required
+                      />
+                    </div>
+                    <div class="inputBox">
+                      <!-- phone number-->
+                      <label>Phone number</label>
+                      <input type="text" placeholder="Phone number" />
+                    </div>
+                  </div>
+                  <!-- message -->
+                  <div class="row100">
+                    <div class="inputBox">
+                      <label for="message">Message</label>
+                      <textarea
+                        placeholder="Write your message for us..."
+                        id="message"
+                        name="message"
+                      ></textarea>
+                    </div>
+                  </div>
+                  <!-- submit button -->
+                  <div class="row100">
+                    <div class="inputBox">
+                      <input type="submit" value="Send" />
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <!-- Info Box -->
+            <div class="contact info">
+              <h3>Cntact Info</h3>
+              <div class="infoBox">
+                <div>
+                  <label><ion-icon name="location-outline"></ion-icon></label>
+                  <p>
+                    Rruga don bosko <br />
+                    TIRANA ALBANIA
+                  </p>
+                </div>
+                <!-- email -->
+                <div>
+                  <label><ion-icon name="mail-outline"></ion-icon></label>
+                  <a href="mailto:murraoliverta@gmail.com"
+                    >murraoliverta@gmail.com</a
+                  >
+                </div>
+                <!-- tel -->
+                <div>
+                  <label><ion-icon name="call"></ion-icon></label>
+                  <a href="tel:+355692973373">+355692973373</a>
+                </div>
+                <div>
+                  <!-- instagram -->
+                  <label><ion-icon name="logo-instagram"></ion-icon></label>
+                  <a href="https://www.instagram.com/ertamurra/">ertamurra</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Map -->
+            <div class="contact map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5991.175292069572!2d19.79970222801672!3d41.33957922238333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135031a1c8d83825%3A0x74a327f9c3644aa8!2sDon%20Bosco%2C%20Tirana%2C%20Albania!5e0!3m2!1sen!2s!4v1676638761286!5m2!1sen!2s"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+  </body>
+</html>

@@ -1,0 +1,671 @@
+:root {
+  --primary-color: #010712;
+  --secondary-color: #818386;
+  --bg-color: #fcfdfd;
+  --button-color: #3b3636;
+  --h1-color: #3f444c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: cursive;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* NAVBAR STYLING STARTS */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  padding-left: 80px;
+  padding-right: 90px;
+  background-color: rgba(20, 39, 53, 0.411);
+  color: #fff;
+  opacity: 0.5px;
+  /* z-index: 100; */
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  height: 90px;
+}
+
+.nav-links a {
+  color: #fff;
+}
+
+/* LOGO */
+
+.logo {
+  font-size: 35px;
+}
+
+/* NAVBAR MENU */
+
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+}
+
+.menu li:hover {
+  background-color: #2e30309d;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.menu li {
+  padding: 5px 14px;
+}
+
+/*RESPONSIVE NAVBAR MENU STARTS/
+
+/* CHECKBOX HACK */
+
+input[type="checkbox"] {
+  display: none;
+}
+
+/*HAMBURGER MENU*/
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+
+/* *********Section1***** */
+
+.container {
+  width: 100%;
+  /* padding: 0 7%; */
+  /* display:flex; */
+  /* margin: 0; */
+  /* max-width: none; */
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("img/planeFirstImg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+/* .container:nth-of-type(2n) {
+  background-color: #4badfe;
+} */
+
+/* ***************WhatsApp**************** */
+.float {
+  position: fixed;
+  width: 80px;
+  height: 80px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 50px;
+  box-shadow: 5px 5px 10px #33303099;
+  z-index: 100;
+}
+
+.my-float {
+  margin-top: 16px;
+}
+/* ***********************FIRST SECTION************************ */
+.welcome {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #fff;
+}
+
+.welcome h1 {
+  font-size: 70px;
+  margin-top: 10px;
+}
+.welcome p {
+  margin: 20px auto;
+}
+
+button {
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #009688;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+span {
+  background: #009688;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+button:hover span {
+  width: 100%;
+}
+button:hover {
+  border: none;
+}
+
+/* *****************END OF SECTION 1******************** */
+
+/* *****************SECTION2************************ */
+
+.container2 {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffffe8;
+}
+
+.about-section {
+  background: url(img/dentisttsect2.jpg) no-repeat left;
+  background-size: 55%;
+  background-color: #fafafa;
+  overflow: hidden;
+  padding: 100px 0;
+}
+
+.inner-container {
+  width: 55%;
+  float: right;
+  background-color: #fffdfd;
+  padding: 150px;
+}
+
+.inner-container h1 {
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.text {
+  color: #545454;
+}
+/* *****************END OF SECTION 2******************** */
+/* ***************** SECTION 3**service****************** */
+
+.container3 {
+  min-height: 50vh;
+  /* background-color: #222; */
+  font-family: poppins, sans-serif;
+  color: #fff;
+}
+
+/* .services{
+  width:1300px;
+  padding: 80px 60px;
+  margin: auto;
+} */
+
+.our-service {
+  text-align: center;
+  font-size: 56px;
+  margin-top: 70px;
+  margin-bottom: 30px;
+  position: relative;
+  font-weight: 600;
+  color: #333;
+}
+
+.services h1:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 3px;
+  background-color: #fff;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 170px;
+  padding-right: 170px;
+}
+
+.card {
+  width: calc(34% - 22px);
+  background: #f2f2f2;
+  color: #333;
+  padding: 20px 12px;
+  margin: 0 30px;
+  text-align: center;
+  cursor: pointer;
+  transition: 3s;
+  position: relative;
+
+  -webkit-box-shadow: 36px 28px 44px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 36px 28px 44px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 36px 28px 44px 0px rgba(0, 0, 0, 0.75);
+}
+
+.sbox img {
+  font-size: 26px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 15px;
+  transition: 0.5s;
+}
+
+.sbox h3 {
+  font-size: 24px;
+}
+.sbox p {
+  margin: 20px 0;
+}
+
+.card:hover .sbox img {
+  background: rgb(0, 184, 148);
+  color: #fff;
+  border-color: rgb(0, 184, 148);
+}
+.card:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.card:hover:after {
+  transform: rotate(13deg);
+  background-color: rgb(0, 184, 148);
+}
+h1 {
+  font-family: sans-serif;
+  background: linear-gradient(
+      to right,
+      rgba(255, 215, 255, 0) 0%,
+      rgba(225, 255, 255, 0.5) 20%,
+      rgba(228, 231, 229, 0.877) 61%
+    ),
+    linear-gradient(
+      rgb(163, 202, 218) 52%,
+      rgb(224, 246, 255) 60%,
+      rgb(181, 226, 230) 61%
+    );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: wave 2000ms ease alternate infinite;
+  transition: all 0.4s ease;
+}
+@keyframes wave {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 50vw 25px;
+  }
+}
+
+/* *****************END OF SECTION 2******************** */
+
+/* *******************RRobotii***** */
+.robot {
+  background: #45badd;
+  margin-top: 15%;
+}
+.container4 {
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("img/robot.gif");
+  background-size: contain;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+#button {
+  cursor: pointer;
+  outline: none;
+  width: 200px;
+  height: 50px;
+  font-family: Courier, monospace;
+  font-size: 20px;
+  color: white;
+  background: #ff3482;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  filter: brightness(95%);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button:disabled {
+  cursor: default;
+  filter: brightness(30%);
+}
+
+/* *****************NA KONTAKTONI************** */
+.container5 {
+  background-color: #0e3959;
+}
+.contactUs {
+  position: relative;
+  width: 100%;
+  padding: 40px 100px;
+}
+
+.contactUs .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+}
+
+.contactUs .title h2 {
+  color: #fff;
+  font-weight: 500;
+}
+
+.form {
+  grid-area: form;
+}
+
+.info {
+  grid-area: info;
+}
+
+.map {
+  grid-area: map;
+}
+.contact {
+  padding: 40px;
+  background: transparent;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.3);
+}
+
+.box {
+  position: relative;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 5fr 4fr;
+  grid-template-areas:
+    "form info"
+    "form map";
+  grid-gap: 20px;
+  margin-top: 20px;
+}
+
+.contact h3 {
+  color: #0e3959;
+  font-weight: 500;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+/* form  */
+.formBox {
+  position: relative;
+  width: 100%;
+}
+
+.formBox .row50 {
+  display: flex;
+  gap: 20px;
+}
+
+.inputBox {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  width: 50%;
+}
+
+.formBox .row100 .inputBox {
+  width: 100%;
+}
+
+.inputBox label {
+  color: #18b7ff;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.inputBox input {
+  padding: 10px;
+  font-size: 1.1em;
+  outline: none;
+  border: 1px solid #333;
+}
+
+.inputBox textarea {
+  padding: 10px;
+  font-size: 1.1em;
+  outline: none;
+  border: 1px solid #333;
+  /* height: 15vh; */
+  resize: none;
+  min-height: 220px;
+  margin-bottom: 10px;
+}
+
+.inputBox input[type="submit"] {
+  background: #18b7ff;
+  color: #fff;
+  border: none;
+  font-size: 1.1em;
+  max-width: 120px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 14px 15px;
+}
+.inputBox::placeholder {
+  color: #999;
+}
+.inputBox input[type="submit"]:hover {
+  background: #0e3959;
+}
+
+/* info second cart */
+.info {
+  background: transparent;
+}
+
+.info h3 {
+  color: #fff;
+}
+.info .infoBox div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.info .infoBox div label {
+  min-width: 40px;
+  height: 40px;
+  color: #010712;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.info .infoBox div p {
+  color: #fff;
+  font-size: 1.1em;
+}
+
+.info .infoBox div a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+.map {
+  padding: 0;
+}
+.map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* APPLYING MEDIA QUERIES */
+
+@media screen {
+  .inner-container {
+    padding: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: rgb(36, 35, 35);
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+    z-index: 100;
+    height: 100vh;
+  }
+
+  .menu li:hover {
+    display: inline-block;
+    background-color: #494b4b62;
+    transition: 0.3s ease;
+  }
+
+  .menu li + li {
+    margin-top: 12px;
+  }
+
+  input[type="checkbox"]:checked ~ .menu {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  /* ******************section1****************** */
+  .welcome {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .welcome h1 {
+    font-size: 50px;
+  }
+  .welcome p {
+    font-size: 15px;
+  }
+  button {
+    width: 40%;
+  }
+  /* *****************END OF SECTION1**************** */
+
+  /* *****************Section2******************* */
+
+  .about-section {
+    background-size: 100%;
+    padding: 10px 45px;
+  }
+
+  .inner-container {
+    width: 100%;
+  }
+  /* *****************END OF SECTION1**************** */
+  /* ******************seksioni i kartave******* */
+  .cards {
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 30px;
+  }
+  .card {
+    width: 100%;
+    /* justify-content: center; */
+    margin-top: 70px;
+    -webkit-box-shadow: 36px 28px 44px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 36px 28px 44px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 36px 28px 44px 0px rgba(0, 0, 0, 0.75);
+  }
+
+  /* **************robotiiiii***** */
+  .container4 {
+    background-position: center center;
+    background-size: cover;
+  }
+
+  #button {
+    box-shadow: 5px 5px 30px 20px rgba(0, 0, 0, 0.5);
+  }
+
+  /* contact un */
+  .contactUs {
+    padding: 20px;
+  }
+  .box {
+    /* position: relative; */
+    /* display: grid; */
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "form" "info" "map";
+  }
+  .map {
+    min-height: 300px;
+  }
+  .formBox .row50 {
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+  }
+  .inputBox {
+    width: 100%;
+  }
+}
